@@ -1,7 +1,43 @@
 = GenomePhone Core
 
-> **"Ring Ring Ring Ring, GenomePhone!"**
+image::https://github.com/GenomePhone/genomephone-frontend/actions/workflows/test.yml/badge.svg[align="center"]
+[.text-center]
+image:https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge["License: MIT", link="https://opensource.org/licenses/MIT"]
+image:https://img.shields.io/badge/kubernetes-336EE5?style=for-the-badge&logo=kubernetes&logoColor=white["Kubernetes", link:https://kubernetes.io]
+image:https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white["Terraform", link:https://www.terraform.io/]
+image:https://img.shields.io/badge/EdgeDB-5DC797?style=for-the-badge["EdgeDB", link:https://kafka.apache.org/]
 
-GenomePhone is a framework for distributed variant calling.
 
-This project houses the core components of GenomePhone, including the data structures and terraform modules.
+> **"Ring ring ring ring, GenomePhone"**
+
+== Introduction
+
+Variant calling is a process in bioinformatics that identifies differences in a genomic sequence compared to a reference sequence. These differences, or variants, can include single nucleotide polymorphisms (SNPs), insertions, deletions, and others. Variant calling plays a crucial role in understanding the genetic basis of diseases, among other applications.
+
+GenomePhone is a framework for distributed variant calling. This repository, `genomephone-core`, houses the core components of GenomePhone, including the data structures and Terraform modules.
+
+The `genomephone-core` provides the foundational elements for GenomePhone, including the data models used to represent genomic data and the Terraform modules used to deploy GenomePhone on a Kubernetes cluster.
+
+== Getting Started
+
+To get started with `genomephone-core`, you can clone this repository.
+
+=== Clone the Repository
+
+[source, bash]
+----
+git clone https://github.com/GenomePhone/genomephone-core.git
+cd genomephone-core
+----
+
+== Usage
+
+The `genomephone-core` repository is primarily used as a source of shared resources for other GenomePhone projects. It includes EdgeDB schema definitions for the data models used in GenomePhone, as well as Terraform modules for deploying GenomePhone on a Kubernetes cluster.
+
+== Contributing
+
+We welcome contributions to `genomephone-core`! If you have a feature request, bug report, or proposal, please open an issue on this GitHub repository.
+
+== License
+
+`genomephone-core` is licensed under the MIT License. See the `LICENSE` file for more details.
