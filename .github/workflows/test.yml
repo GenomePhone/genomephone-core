@@ -1,0 +1,26 @@
+name: Test Schema
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@main
+      with:
+        submodules: 'recursive'  # Fetch Git submodules recursively
+
+    - name: Set up Python
+      uses: actions/setup-python@main
+      with:
+        python-version: 3.11
+
+    - name: Install edgedb
+      run: curl --proto '=https' --tlsv1.2 -sSf https://sh.edgedb.com > edgedb.sh && chmod +x ./edgedb.sh && ./edgedb.sh -y && rm edgedb.sh
+
+    - name: Initialize edgedb project
+      run: edgedb project init --non-interactive && edgedb migration create --non-interactive && edgedb migrate

@@ -20,6 +20,6 @@ module default {
     type Chunk {
         required data: str;
         single result: str;
-        single link genome := .<chunks[is Genome];
+        single link genome := assert_single(.<chunks[is Genome]);
     }
 }
