@@ -1,6 +1,6 @@
 = GenomePhone Core
 
-image::https://github.com/GenomePhone/genomephone-frontend/actions/workflows/test.yml/badge.svg[align="center"]
+image::https://github.com/GenomePhone/genomephone-core/actions/workflows/test.yml/badge.svg[align="center"]
 [.text-center]
 image:https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge["License: MIT", link="https://opensource.org/licenses/MIT"]
 image:https://img.shields.io/badge/kubernetes-336EE5?style=for-the-badge&logo=kubernetes&logoColor=white["Kubernetes", link:https://kubernetes.io]
