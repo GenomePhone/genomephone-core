@@ -1,0 +1,7 @@
+= GenomePhone Core
+
+> **"Ring Ring Ring Ring, GenomePhone!"**
+
+GenomePhone is a framework for destributed variant calling.
+
+This project houses the core components of GenomePhone, including the data structures and terraform modules.
